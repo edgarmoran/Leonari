@@ -213,3 +213,31 @@ div#quad figure figcaption {
 .expanded { transform: scale(2); z-index: 997; position: absolute; margin: 0; }
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }
+
+#servicios{
+	background-color: #ffcc00;
+	margin-top: -30px;
+	width: 100%;
+}
+#servicios h3{
+	font-size: 2em;
+	padding: 15px 15px 0px 15px;
+}
+#servicios .itemServicio{
+	width: 95%;
+	margin: 0px 2% 15px 2%;
+	height: 150px;
+
+}
+#servicios .itemServicio .imgServicio{
+	position: absolute;
+	width: 100%;
+	height: 150px;
+
+}
+.itemServicio p .tituloservicio{
+	font-size: 2em;
+	color: #99cc33;
+	text-align: center;
+	position: absolute;
+}
