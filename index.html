@@ -1,41 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Leonari</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/menu.js"></script>
 	
 </head>
 <body>
 	<header>
-		<img src="./img/leonari-logo.png" alt="Logo Leonari" />
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
-				<li><a href="#galeria">Galería</a></li>
-				<li><a href="#servicios">Servicios</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-		</nav>
+		<figure id="logo"> <img src="./img/leonari-logo.png" alt="Logo Leonari" /> 
+		</figure>
+		<!-- Hack Para Desplegar el Menú activando un checkbox -->
+		<div class="wrap">
+	 		<div id="menu" class="menu-responsive">
+	      		<ul>
+	            	<li><a href="index.html">Inicio</a></li>
+					<li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+					<li><a href="#galeria">Galería</a></li>
+	            	<li><a href="#servicios">Servicios</a></li>
+	            	<li><a href="#contacto">Contacto</a></li>
+	        	</ul>
+	        	<div class="three-lines-menu"> &#9776;</div>
+			</div><!-- Menu -->
+		</div>
 	</header>
 	<div id="slide">
-		<img src="./img/fachada.jpg" alt="Fachada del salón Leonari" />
+		<!--<figure><img class="crop" src="./img/fachada.jpg" alt="Fachada del salón Leonari" /> </figure> -->
 	</div>
 	<div id="slogan">
 		<h1>Leonari</h1><h2>El espacio ideal para la celebración de cumpleaños, bautizos y baby showers.</h2>
 	</div>
 	<div id="galeria">
 		<h3>Galería</h3>
-		<div id="galeriaimg">
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
-			<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="item" />
+
+		<div id="quad">
+			<figure>
+				<img src="./img/img01.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img02.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img03.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img04.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img05.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img06.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img07.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/img08.jpg" alt="Imagen galeria muestra" class="itemIMG" />
+				<figcaption>Descripción imagen</figcaption>
+			</figure>
 		</div>
 	</div>
+	<aside id="servicios">
+		<h3>Servicios</h3>
+		<article class="itemServicio">
+			<img class="imgServicio" src="./img/servicio-renta.jpg" alt="Servicio de renta de salón" />
+			<p>RENTA DE SALÓN</p>
+		</article>
+		<article class="itemServicio">
+			<img class="imgServicio" src="./img/paquetes.jpg" alt="Servicio de renta de salón" />
+			<p>PAQUETES</p>
+		</article>
+		<article class="itemServicio">
+			<img class="imgServicio" src="./img/otros-servicios.jpg" alt="Servicio de renta de salón" />
+			<p>OTROS SERVICIOS</p>
+		</article>
+	</aside>
+	<div id="contacto">
+		<h3>Contacto</h3>
+		<div id="maps">
+		</div>
+		<div id="form">
+			<input type="text" name="name" placeholder="Nombre*"></input>
+			<input type="email" name="email" placeholder="Correo electrónico*"></input>
+			<input type="text" name="asunto" placeholder="Asunto*"></input>
+			<textarea name="mensaje" rows="5" >Mensaje*
+			</textarea>
+			<input type="text" name="validador" placeholder="Validador*"></input>
+			<button type="button">Enviar mensaje</button>
+		</div>
+	</div>
+	<footer>
+		<div id="redes">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+		<p>Av. Colima 2362 Col. Franciso I. Madero</p>
+		<p>(Cacho), C.P. 22040, Tijuana, B.C.</p>
+		<p>Tel. (664) 684-1826</p>
+		<p>Correo electrónico: info@leonari.com.mx</p>
+		<p>2017® Todos los derechos reservados</p>
+		<p>Leonari</p>
+	</footer>
+	<script>
+		var quadimages = document.querySelectorAll("#quad figure");
+for(i=0; i<quadimages.length; i++) {
+  quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+}
+	</script>
 </body>
 </html>
